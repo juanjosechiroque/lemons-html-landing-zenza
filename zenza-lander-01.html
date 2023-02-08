@@ -13,6 +13,8 @@
     <script src="https://animaapp.s3.amazonaws.com/launchpad-static/launchpad.js"></script>
     <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
     <link rel="stylesheet" type="text/css" href="css/globals.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
   </head>
   <body style="margin: 0; background: #ffffff">
     <input type="hidden" id="anPageName" name="page" value="zenza-lander-01" />
@@ -185,28 +187,14 @@
             </p>
           </div>
         </div>
-        <div class="carousel">
-          <div class="resultados-reales valign-text-middle poppins-semi-bold-eerie-black-20px">Resultados Reales</div>
-          <div class="carousel-1">
-            <div class="gallery-padding">
-              <div class="gallery">
-                <article class="image-container">
-                  <img class="resu3-1" src="img/resu3-1@2x.png" alt="resu3 1" />
-                </article>
-                <article class="image-container">
-                  <img class="resu3-1-1 resu3-1-3" src="img/resu3-1-1@2x.png" alt="resu3 1" />
-                </article>
-                <article class="image-container-1">
-                  <img class="resu3-1-2 resu3-1-3" src="img/resu3-1-2@2x.png" alt="resu3 1" />
-                </article>
-              </div>
-            </div>
-            <div class="indicators">
-              <div class="ellipse-1"></div>
-              <div class="ellipse"></div>
-              <div class="ellipse"></div>
-            </div>
-          </div>
+        <div class="swiffy-slider">
+            <ul class="slider-container">
+                <li><img src="https://source.unsplash.com/49b9l_29ceA/1600x900" style="max-width: 100%;height: auto;"></li>
+                <li><img src="https://source.unsplash.com/nKAglN6HBH8/1600x900" style="max-width: 100%;height: auto;"></li>
+                <li><img src="https://source.unsplash.com/E9ZwWcMGzj8/1600x900" style="max-width: 100%;height: auto;"></li>
+            </ul>
+            <button type="button" class="slider-nav"></button>
+            <button type="button" class="slider-nav slider-nav-next"></button>
         </div>
         <div class="overlap-group18">
           <div class="como_usar">
