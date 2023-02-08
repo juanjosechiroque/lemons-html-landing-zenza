@@ -590,13 +590,14 @@
                   </div>
                   <div class="seleccione-su-pais poppins-normal-eerie-black-12px">Seleccione su Pais</div>
                 </div>
-                <form id="form1" class="" name="form1" action="form1" method="post"></form>
+                <form id="form1" class="" name="form1" action="form1">
                 <div class="nombre">
                   <div class="overlap-group2-1">
                     <div class="rectangle-2"></div>
                     <input
                       class="su-nombre poppins-normal-eerie-black-12px"
                       name="sunombre"
+                      id="txtNombre"
                       placeholder="SU NOMBRE"
                       type="text"
                       maxlength="25"
@@ -613,14 +614,13 @@
                     <div class="rectangle-2"></div>
                     <input class="su-telefono poppins-normal-eerie-black-12px"
                             name="sutelefono"
+                            id="txtTelefono"
                             placeholder="SU TELEFONO"
                             type="num"
-                            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                            pattern="[0-9]{10}"
                             maxlength="10"
                             required
                             />
-
-
                   <img class="line-1" src="img/line-18.svg" alt="Line 18" />
                     <img class="icon-call" src="img/---icon--phone-call-@2x.png" alt="icon-call" />
                   </div>
@@ -628,12 +628,14 @@
                     Su numero de telefono celular sin el prefijo 15
                   </p>
                 </div>
-              
+                <br />
+                <p id="lblError">
+                </p>
+            
                 <a href="javascript:SubmitForm('form1')">
                   <div class="button-3">
                     <div class="label-2 valign-text-middle label-3 opensans-bold-white-18px">REALIZAR PEDIDO AHORA</div>
-                  </div></a
-                >
+                  </div></a>
 
               </form>
                 
@@ -978,12 +980,48 @@
         };
       }
 
-      function SubmitForm(form_name) {
-        var form = document.getElementsByName(form_name)[0];
+      async function SubmitForm(form_name) {
+        var form = document.getElementById("form1");
+
         if (form.reportValidity()) {
-          form.submit();
-          if (window.submitted) window.submitted();
+
+            const txtNombre = document.getElementById("txtNombre");
+            const txtTelefono = document.getElementById("txtTelefono");
+            const lblError = document.getElementById("lblError");
+
+            const postData = {
+                name: txtNombre.value,
+                phone: txtTelefono.value,
+                offer_id: "26814",
+                country_code: "AR",
+                price: "8990",
+                currency_code: "ARS",
+                base_url: window.location.href
+            };
+
+            const URL = "https://lemons-node-api-affiliate.onrender.com/api/order/";
+
+            try {
+                const response = await fetch(URL, {
+                 method: 'POST',
+                 headers: {
+                   'Content-Type': 'application/json'
+                   },
+                   body: JSON.stringify(postData)
+                 });
+                 const data = await response.json();
+                 if (data.code == "ok") {
+                    lblError.innerText = "";
+                    window.location.replace("zenza-thankyou-01.html");
+                 } else {
+                    lblError.innerText = data.error;
+                 }
+                 console.log(data);
+            } catch(error) {
+                console.log(error)
+            } 
         }
+
       }
     </script>
   </body>
