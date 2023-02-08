@@ -1,0 +1,318 @@
+/* screen - zenza-thankyou-01 */
+
+.zenza-thankyou-01 {
+  align-items: center;
+  background-color: var(--white);
+  border: 1px none;
+  display: flex;
+  flex-direction: column;
+  height: 1274px;
+  overflow: hidden;
+  width: 393px;
+}
+
+.zenza-thankyou-01 .header {
+  align-items: flex-start;
+  background-color: var(--soapstone);
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 73px;
+  justify-content: flex-start;
+  min-width: 393px;
+  padding: 16.2px 15.3px;
+  width: auto;
+}
+
+.zenza-thankyou-01 .logo-1 {
+  height: 39px;
+  object-fit: cover;
+  width: 163px;
+}
+
+.zenza-thankyou-01 .overlap-group-container {
+  height: 352px;
+  margin-right: 2.68px;
+  position: relative;
+  width: 394px;
+}
+
+.zenza-thankyou-01 .overlap-group {
+  align-items: flex-end;
+  background-image: url(../img/rectangle-37-1@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+  left: 2px;
+  min-height: 318px;
+  padding: 30px 10.3px;
+  position: absolute;
+  top: 0;
+  width: 392px;
+}
+
+.zenza-thankyou-01 .muchas-gracias-esta {
+  color: var(--black);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  height: 22px;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-align: center;
+  white-space: nowrap;
+  width: 371px;
+}
+
+.zenza-thankyou-01 .product1-3 {
+  align-self: center;
+  height: 129px;
+  margin-right: 11.27px;
+  object-fit: cover;
+  width: 147px;
+}
+
+.zenza-thankyou-01 .overlap-group-1 {
+  align-items: flex-start;
+  background-color: var(--oasis);
+  border: 2px dashed;
+  border-color: var(--black);
+  display: flex;
+  height: 88px;
+  left: 21px;
+  min-width: 359px;
+  padding: 7.9px 12.5px;
+  position: absolute;
+  top: 264px;
+}
+
+.zenza-thankyou-01 .atencion-estate-ate {
+  color: transparent;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-s);
+  font-weight: 400;
+  height: 65px;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: center;
+  width: 325px;
+}
+
+.zenza-thankyou-01 .span {
+  color: var(--orange-red);
+  font-weight: 700;
+}
+
+.zenza-thankyou-01 .span-1 {
+  color: var(--eerie-black);
+  font-weight: 500;
+}
+
+.zenza-thankyou-01 .frame-2 {
+  align-items: flex-start;
+  display: flex;
+  height: 244px;
+  margin-left: 4.89px;
+  margin-top: 22px;
+  min-width: 345px;
+}
+
+.zenza-thankyou-01 .overlap-group-2 {
+  align-items: flex-start;
+  background-color: #e5f1dfb5;
+  border: 1.5px solid;
+  border-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px #00000040 , 0px 4px 4px #00000040;
+  display: flex;
+  flex-direction: column;
+  min-height: 244px;
+  padding: 18.6px 10.4px;
+  width: 345px;
+}
+
+.zenza-thankyou-01 .overlap-group2 {
+  height: 27px;
+  margin-left: 2.18px;
+  margin-top: 17px;
+  position: relative;
+  width: 312px;
+}
+
+.zenza-thankyou-01 .line-30 {
+  left: 5px;
+  position: absolute;
+  top: 26px;
+}
+
+.zenza-thankyou-01 .detalle-de-tu-solicitud {
+  color: var(--eerie-black);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-weight: 700;
+  height: 26px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 15px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 207px;
+}
+
+.zenza-thankyou-01 .overlap-group1 {
+  align-items: center;
+  background-color: var(--soapstone);
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px #00000040 , 0px 4px 4px #00000040;
+  display: flex;
+  gap: 66px;
+  height: 76px;
+  margin-top: 8px;
+  min-width: 320px;
+  padding: 14.7px 15.2px;
+}
+
+.zenza-thankyou-01 .zenza-cream {
+  height: 19px;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-top: 10.66px;
+  white-space: nowrap;
+  width: 108px;
+}
+
+.zenza-thankyou-01 .flex-col {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  min-height: 41px;
+  width: 113px;
+}
+
+.zenza-thankyou-01 .precio-oferta {
+  height: 19px;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin-bottom: -1px;
+  margin-left: 1.89px;
+  white-space: nowrap;
+}
+
+.zenza-thankyou-01 .ar-8990 {
+  height: 21px;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-bottom: -9px;
+  margin-top: 1px;
+  white-space: nowrap;
+}
+
+.zenza-thankyou-01 .line-31 {
+  margin-left: 4.07px;
+  margin-top: 8px;
+}
+
+.zenza-thankyou-01 .flex-row {
+  align-items: center;
+  display: flex;
+  gap: 11px;
+  margin-left: 15.18px;
+  margin-top: 12px;
+  min-width: 170px;
+}
+
+.zenza-thankyou-01 .shipping-2 {
+  height: 25px;
+  object-fit: cover;
+  width: 38px;
+}
+
+.zenza-thankyou-01 .envio-en-48hs {
+  height: 19px;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-top: 0.9px;
+  white-space: nowrap;
+  width: 122px;
+}
+
+.zenza-thankyou-01 .flex-row-1 {
+  align-items: flex-start;
+  display: flex;
+  gap: 11px;
+  margin-left: 15.18px;
+  margin-top: 9px;
+  min-width: 246px;
+}
+
+.zenza-thankyou-01 .cod-2 {
+  height: 25px;
+  object-fit: cover;
+  width: 38px;
+}
+
+.zenza-thankyou-01 .pagas-cuando-recibes {
+  align-self: flex-end;
+  height: 19px;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  width: 197px;
+}
+
+.zenza-thankyou-01 .footer {
+  align-items: flex-start;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 375px;
+  justify-content: flex-start;
+  margin-left: 1.0px;
+  margin-top: 208px;
+  min-width: 402px;
+  width: auto;
+}
+
+.zenza-thankyou-01 .overlap-group-3 {
+  align-items: flex-end;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 375px;
+  padding: 30px 23px;
+  width: 398px;
+}
+
+.zenza-thankyou-01 .atencin-los-produc {
+  align-self: center;
+  letter-spacing: 0;
+  line-height: 15px;
+  margin-left: 9.0px;
+  margin-top: 25px;
+  min-height: 259px;
+  text-align: center;
+  width: 267px;
+}
+
+.zenza-thankyou-01 .wwwdominiocom-to {
+  color: var(--white);
+  font-family: var(--font-family-poppins);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 15px;
+  min-height: 21px;
+  text-align: center;
+  width: 346px;
+}
+
+.zenza-thankyou-01 .line {
+  height: 1px;
+  width: 306px;
+}
