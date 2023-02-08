@@ -608,6 +608,7 @@
                             pattern="[0-9]{8}"
                             maxlength="8"
                             required
+                            onkeypress="return isNumber(event)"
                             />
                   <img class="line-1" src="img/line-18.svg" alt="Line 18" />
                     <img class="icon-call" src="img/---icon--phone-call-@2x.png" alt="icon-call" />
@@ -968,7 +969,12 @@
         };
       }
 
-      async function SubmitForm(form_name) {
+       function isNumber(evt) {
+            evt = (evt) ? evt : window.event;
+            let charCode = (evt.which) ? evt.which : evt.keyCode;
+            return charCode >= 48 && charCode <= 57
+        }
+        async function SubmitForm(form_name) {
         var form = document.getElementById("form1");
 
         if (form.reportValidity()) {
